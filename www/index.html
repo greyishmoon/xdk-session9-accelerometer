@@ -28,26 +28,36 @@
 
 <body>
 
-<div data-role="page" id="pageone">
-    <div data-role="header">
-        <h1>Header Text</h1>
-    </div>
-
-    
-    <div data-role="main" class="ui-content">
+<div data-role="page" id="page1">
   
-		<button id="exampleButton">Example button</button>
-        
-        <p>Example text: <span id="exampleText" >replace me!</span></p>
-        <p id="exampleAppend" >Example append:</p>
+  <div data-role="header">
+    <h1>Sensor Example</h1>
+  </div>
+  
+  <div data-role="content">
  
-    </div>
+ 		<label for="flipswitch">Sensor:</label>
+      	<select name="flipswitch" id="flipswitch" data-role="slider">
+        	<option value="off">Off</option>
+        	<option value="on">On</option>
+      	</select>
+       
+      	<label for="textarea">Current values:</label>
+   		<input type="text" name="sensorX" id="sensorX" value=""  />
+   		<input type="text" name="sensorY" id="sensorY" value=""  />
+   		<input type="text" name="sensorZ" id="sensorZ" value=""  />
+		<input type="text" name="timestamp" id="timestamp" value=""  />
+   		
+        <label for="slider">Update (ms):</label>
+    	<input id="slider" type="range" name="slider" value="3000" min="0" max="10000" />
+    
+  </div>
   
-
-    <div data-role="footer" data-position="fixed">
-        <h1>Footer Text</h1>
-    </div>  
-</div> 
+  <div data-role="footer">
+    <h4>Footer</h4>
+  </div>
+  
+</div>
 
 </body>
 </html>
